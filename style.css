@@ -12,6 +12,10 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+section {
+  padding: 0 3rem;
+}
+
 nav {
   background-color: #fff;
   display: flex;
@@ -20,6 +24,11 @@ nav {
   padding: 2.5rem 3rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
   color: #0d1216;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .nav-list {
@@ -104,7 +113,7 @@ form input::placeholder {
 
 .hero {
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 18rem;
   position: relative;
 }
 
@@ -288,4 +297,172 @@ form input::placeholder {
   100% {
     transform: translateX(-50%);
   }
+}
+
+/*............. WORKS ...............*/
+.work {
+  padding-top: 10rem;
+}
+
+.work h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.work-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.works svg {
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform .2s ease, box-shadow .2s ease-in;
+}
+
+.works svg:hover,
+.works svg:active {
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(68, 92, 116, .02),
+    0 2px 8px rgba(57, 76, 96, .15);
+  transform: translateY(-8px);
+}
+
+.work-box p {
+  font-size: 1.6rem;
+}
+
+.doc {
+  color: #fff;
+  background-color: #00c4cc;
+}
+
+.white {
+  color: #21a663;
+}
+
+.pres {
+  color: #f90;
+}
+
+.vid {
+  color: #d269e6;
+}
+
+.web {
+  color: #575efd;
+}
+
+/*............. DOCUMENT ...............*/
+.docum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.docum-text {
+  width: 50%;
+}
+
+.docum-text h2 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.docum-text p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-bottom: 4rem;
+}
+
+.docum-text a {
+  background-color: #8b3dff;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  transition: all .2s;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border-radius: .4rem;
+  font-weight: 700;
+}
+
+.docum-text a:hover {
+  background-color: #9e77f3;
+}
+
+.docum video {
+  width: 45%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px rgba(68, 92, 116, .02),
+    0 2px 8px rgba(57, 76, 96, .15);
+  ;
+}
+
+/*............. TEMPLATES ...............*/
+.template {
+  padding-top: 10rem;
+}
+
+.template h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.template p {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.template-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 6rem;
+}
+
+.template-box img {
+  width: 22rem;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(64, 87, 109, .07);
+}
+
+.group1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.template a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  background-color: rgba(64, 87, 109, .07);
+  color: #0d1216;
+  font-weight: 600;
+  padding: 1.7rem;
+  width: 18%;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: .4rem;
+  transition: all .2s;
+}
+
+.template a:hover {
+  background-color:
+    rgba(57, 76, 96, .15);
 }
