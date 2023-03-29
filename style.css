@@ -62,6 +62,8 @@ form input {
   margin-left: -1rem;
   border-radius: 6px;
   border: 1px solid rgb(133, 133, 133);
+  font-family: 'Noto Sans', sans-serif;
+
 }
 
 form input::placeholder {
@@ -222,7 +224,7 @@ form input::placeholder {
 }
 
 .perfect-footer {
-  margin-top: 3rem;
+  margin-top: 7rem;
 }
 
 .perfect-footer p {
@@ -232,4 +234,58 @@ form input::placeholder {
 .perfect-footer a {
   text-decoration: none;
   color: #8b3dff;
+
+}
+
+
+/* PARTNERS */
+.trust {
+  padding-top: 10rem;
+}
+
+.trust h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slider-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.slider .slider-track:hover {
+  animation-play-state: paused;
+}
+
+.slide img {
+  width: 15rem;
+  height: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
