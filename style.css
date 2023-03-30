@@ -415,16 +415,21 @@ form input::placeholder {
   padding-top: 10rem;
 }
 
-.template h2 {
+.template h2,
+.create h2,
+.surprise h2 {
   font-size: 3.5rem;
   text-align: center;
   margin-bottom: 2rem;
   font-family: 'Lato', sans-serif;
 }
 
-.template p {
+.template p,
+.create-para,
+.surprise-para {
   font-size: 1.7rem;
   text-align: center;
+  color: rgba(13, 18, 22, .7);
 }
 
 .template-box {
@@ -465,4 +470,112 @@ form input::placeholder {
 .template a:hover {
   background-color:
     rgba(57, 76, 96, .15);
+}
+
+/*............. CREATE ...............*/
+.create {
+  padding-top: 10rem;
+}
+
+.create-para {
+  width: 45%;
+  margin: 0 auto;
+  line-height: 3rem;
+}
+
+.create-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 5rem;
+}
+
+.create-text {
+  margin-left: 12rem;
+  margin-top: 8rem;
+  width: 30%;
+}
+
+.text-row {
+  display: flex;
+  align-items: center;
+}
+
+.text-row:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.text-row p {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  color: #0d1216;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+.text-row span {
+  font-weight: 300;
+}
+
+.create-box video {
+  width: 50%;
+}
+
+.create a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-align: center;
+  display: block;
+  background-color: #8b3dff;
+  width: 15%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5rem 0;
+  color: #fff;
+  border-radius: .8rem;
+  font-weight: 600;
+}
+
+/*............. SURPRISE ...............*/
+.surprise {
+  padding-top: 15rem;
+}
+
+.surprise-boxs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  /* align-items: center; */
+}
+
+.surprise-box {
+  width: 23.5%;
+}
+
+.surprise-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+.surprise-box h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.surprise-box p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: rgba(13, 18, 22, .7);
+}
+
+footer {
+  margin-top: 10rem;
+}
+
+.footer {
+
+  display: flex;
+  justify-content: space-between;
 }
