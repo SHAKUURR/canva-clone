@@ -612,9 +612,17 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
-.copyright {
+.copyright p,
+.copyright h3 {
   text-align: center;
   font-size: 1.5rem;
+  color: rgba(13, 18, 22, .7)
+}
+
+.copyright h3 {
+  color: #0d1216;
+  font-weight: 500;
 }
