@@ -12,7 +12,8 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-section {
+section,
+footer {
   padding: 0 3rem;
 }
 
@@ -226,9 +227,8 @@ form input::placeholder {
   background-color: #9e77f3;
 }
 
-.crown {
-  font-size: 2.5rem;
-  margin-right: 1rem;
+.canva span {
+  /* margin-right: 1rem; */
   color: #fbbe28;
 }
 
@@ -575,7 +575,54 @@ footer {
 }
 
 .footer {
-
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(43, 59, 74, .3);
+}
+
+.footer h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  border-top: 1px solid rgba(43, 59, 74, .3);
+
+}
+
+.footer a {
+  font-size: 1.6rem;
+}
+
+.footer li {
+  margin-bottom: 1.5rem;
+}
+
+.footer li:last-child {
+  margin-bottom: 4rem;
+}
+
+.copy {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.copyright p,
+.copyright h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgba(13, 18, 22, .7)
+}
+
+.copyright h3 {
+  color: #0d1216;
+  font-weight: 500;
 }
